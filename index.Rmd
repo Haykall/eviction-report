@@ -1,0 +1,27 @@
+---
+title: "Evictions report"
+author: "Haykal Mubin"
+date: "2/7/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("analysis.R")
+```
+
+This report focuses on evictions in the city of San Francisco. The data set contained `r num_evictions`.
+
+## Zip code analysis
+Here is a table with of Zip codes
+```{r, echo=FALSE}
+zip_code_eviction
+```
+## Evictions by month
+```{r, echo=FALSE}
+month_plot
+```
+## Mapped plot
+```{r, echo=FALSE}
+evictions_plot
+```
